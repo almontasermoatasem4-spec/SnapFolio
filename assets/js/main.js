@@ -98,8 +98,8 @@
     // About
     "about_badge": { "en": "Get to Know Me", "ar": "تعرف علي" },
     "about_title": { "en": "Passionate About Creating Digital Experiences", "ar": "شغوف بخلق تجارب رقمية مميزة" },
-    "about_desc_1": { "en": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.", "ar": "هذا نص تجريبي يمكن استبداله لاحقاً. يهدف إلى ملء المساحة وعرض كيفية ظهور النصوص العربية في التصميم." },
-    "about_desc_2": { "en": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.", "ar": "هذا نص تجريبي آخر لتكملة الفقرة وإظهار التنسيق بشكل جيد." },
+    "about_desc_1": { "en": "I’m a passionate web developer and designer focused on building modern, high-quality digital experiences. I enjoy turning ideas into fast, clean, and user-friendly websites using the latest technologies. As a dedicated student, I continuously work on improving my programming skills and expanding my knowledge to grow into a strong and professional developer in the tech world.", "ar": "أنا مطور ومصمم ويب شغوف أركز على بناء تجارب رقمية حديثة وعالية الجودة. أستمتع بتحويل الأفكار إلى مواقع ويب سريعة ونظيفة وسهلة الاستخدام باستخدام أحدث التقنيات. وبصفتي طالباً متفانياً، أعمل باستمرار على تحسين مهاراتي البرمجية وتوسيع معرفتي للنمو لأصبح مطوراً قوياً ومحترفاً في عالم التكنولوجيا." },
+    "about_desc_2": { "en": "", "ar": "" },
     "stats_projects": { "en": "Projects Completed", "ar": "مشاريع مكتملة" },
     "stats_exp_years": { "en": "Years Experience", "ar": "سنوات الخبرة" },
     "stats_client_sat": { "en": "Client Satisfaction", "ar": "رضا العملاء" },
