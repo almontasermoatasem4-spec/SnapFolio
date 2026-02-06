@@ -2617,3 +2617,139 @@ section,
 [data-theme='light'] .floating-tech-name {
   opacity: 0.12;
 }
+
+/*--------------------------------------------------------------
+# Resume Visual Animation
+--------------------------------------------------------------*/
+.resume-visual-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.visual-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.floating-visual {
+  animation: cinematic-float 8s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(138, 43, 226, 0.3));
+  position: relative;
+  z-index: 5;
+}
+
+.glow-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, transparent 70%);
+  animation: pulse-glow 6s infinite alternate;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.element {
+  position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--accent-color);
+  opacity: 0.6;
+  padding: 5px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code-tag {
+  top: 10%;
+  left: 5%;
+  animation: float-random 10s infinite alternate linear;
+}
+
+.sql-tag {
+  bottom: 15%;
+  right: 10%;
+  animation: float-random 12s infinite alternate-reverse linear;
+  animation-delay: 2s;
+}
+
+.php-tag {
+  top: 40%;
+  right: 5%;
+  animation: float-random 9s infinite alternate linear;
+  animation-delay: 1s;
+}
+
+@keyframes cinematic-float {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(1deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes float-random {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(10px, -15px);
+  }
+
+  50% {
+    transform: translate(-5px, 10px);
+  }
+
+  75% {
+    transform: translate(-15px, -5px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* RTL Adjustments */
+[dir="rtl"] .resume-visual-container {
+  text-align: right;
+}
