@@ -208,6 +208,7 @@
     "contact_info_title": { "en": "Contact Info", "ar": "معلومات الاتصال" },
     "contact_info_desc": { "en": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.", "ar": "يمكنك التواصل عبر القنوات التالية" },
     "info_location": { "en": "Our Location", "ar": "الموقع" },
+    "info_location_val": { "en": "Yemen, Sana'a", "ar": "اليمن، صنعاء" },
     "info_phone": { "en": "Phone Number", "ar": "رقم الهاتف" },
     "info_email": { "en": "Email Address", "ar": "البريد الإلكتروني" },
     "form_title": { "en": "Get In Touch", "ar": "أرسل رسالة" },
@@ -217,6 +218,14 @@
     "form_ph_subject": { "en": "Subject", "ar": "الموضوع" },
     "form_ph_message": { "en": "Message", "ar": "الرسالة" },
     "btn_send_msg": { "en": "Send Message", "ar": "إرسال" },
+
+    // Testimonials details
+    "test1_text": { "en": "Great work on the website! Clean code and responsive design.", "ar": "عمل رائع على الموقع! كود نظيف وتصميم متجاوب." },
+    "test1_name": { "en": "Ahmed Mohammed", "ar": "أحمد محمد" },
+    "test1_position": { "en": "Web Developer", "ar": "مطور ويب" },
+    "test2_text": { "en": "Professional service and timely delivery. Highly recommended!", "ar": "خدمة احترافية وتسليم في الوقت المحدد. موصى به للغاية!" },
+    "test2_name": { "en": "Sarah Johnson", "ar": "سارة جونسون" },
+    "test2_position": { "en": "Project Manager", "ar": "مديرة مشاريع" },
 
     // Footer
     "footer_rights": { "en": "All Rights Reserved", "ar": "جميع الحقوق محفوظة" },
@@ -255,9 +264,23 @@
         bootstrapLink.href = bootstrapLink.href.replace('bootstrap.rtl.min.css', 'bootstrap.min.css');
       }
 
-      // Reset Font
-      document.body.style.fontFamily = "";
+      // Reset Font to Unified English Font
+      document.body.style.fontFamily = "'Outfit', sans-serif";
     }
+
+    // Preserve Theme
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    const themeIcons = document.querySelectorAll('.theme-toggle-btn i');
+    themeIcons.forEach(icon => {
+      if (currentTheme === 'light') {
+        icon.classList.remove('bi-moon');
+        icon.classList.add('bi-sun');
+      } else {
+        icon.classList.remove('bi-sun');
+        icon.classList.add('bi-moon');
+      }
+    });
 
     // Update Text Content
     const elements = document.querySelectorAll('[data-i18n]');

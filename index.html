@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cairo:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cairo:wght@400;700&family=Outfit:wght@400;700&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -63,7 +63,7 @@
           <li><a href="#portfolio"><span data-i18n="nav_portfolio">Portfolio</span></a></li>
           <li><a href="#services"><span data-i18n="nav_services">Services</span></a></li>
 
-          
+
           <li><a href="#contact"><span data-i18n="nav_contact">Contact</span></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -162,19 +162,23 @@
                 <div class="contact-links">
                   <a href="mailto:almontasermoatasem4@gmail.com" class="contact-item" title="Email">
                     <i class="bi bi-envelope"></i>
+                    <span>almontasermoatasem4@gmail.com</span>
                   </a>
                   <a href="https://wa.me/967777022072" target="_blank" class="contact-item" title="WhatsApp">
                     <i class="bi bi-whatsapp"></i>
+                    <span>+967 777 022 072</span>
                   </a>
                   <a href="https://t.me/+967776953469" target="_blank" class="contact-item" title="Telegram">
                     <i class="bi bi-telegram"></i>
+                    <span>@Mutasim_Almontaser</span>
                   </a>
                   <a href="https://instagram.com/4p0.j" target="_blank" class="contact-item" title="Instagram">
                     <i class="bi bi-instagram"></i>
+                    <span>4p0.j</span>
                   </a>
                   <a href="#" class="contact-item">
                     <i class="bi bi-geo-alt"></i>
-                    اليمن، صنعاء
+                    <span data-i18n="info_location_val">Yemen, Sana'a</span>
                   </a>
                 </div>
               </div>
@@ -258,7 +262,7 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-emoji-smile"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1"
                   class="purecounter"></span>
                 <p data-i18n="stat_happy_clients">Happy Clients</p>
               </div><!-- End Stats Item -->
@@ -267,7 +271,7 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-journal-richtext"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="43" data-purecounter-duration="1"
                   class="purecounter"></span>
                 <p data-i18n="stat_projects">Projects</p>
               </div><!-- End Stats Item -->
@@ -276,7 +280,7 @@
                 <div class="icon-wrapper">
                   <i class="bi bi-headset"></i>
                 </div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                <span data-purecounter-start="0" data-purecounter-end="287" data-purecounter-duration="1"
                   class="purecounter"></span>
                 <p data-i18n="stat_hours_support">Hours Of Support</p>
               </div><!-- End Stats Item -->
@@ -957,7 +961,8 @@
                 ante ipsum primis.
               </p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              <form action="https://formspree.io/f/almontasermoatasem4@gmail.com" method="post" role="form"
+                class="email-form">
                 <div class="row gy-4">
 
                   <div class="col-md-6">
@@ -981,11 +986,8 @@
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                    <button type="submit" class="btn" data-i18n="btn_send_msg">Send Message</button>
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill" data-i18n="btn_send_msg">Send
+                      Message</button>
                   </div>
 
                 </div>
@@ -1005,7 +1007,8 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>جميع الحقوق محفوظة لـ <strong>معتصم المنتصر</strong> © 2026</p>
+        <p><span data-i18n="footer_rights">All Rights Reserved</span> © 2026 <strong><span
+              data-i18n="hero_name">Moatasem Almontaser</span></strong></p>
       </div>
     </div>
 

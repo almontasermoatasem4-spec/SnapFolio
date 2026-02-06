@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --heading-font: "Poppins", sans-serif;
-  --nav-font: "Inter", sans-serif;
+  --default-font: "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --heading-font: "Outfit", sans-serif;
+  --nav-font: "Outfit", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -236,6 +236,12 @@ h6 {
 
 .header .header-social-links .theme-toggle-btn:hover {
   color: var(--accent-color);
+}
+
+/* Dark Mode Header Styling */
+.header {
+  background-color: var(--surface-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Light Mode Header Styling */
