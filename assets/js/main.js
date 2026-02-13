@@ -209,6 +209,8 @@
     "contact_info_desc": { "en": "Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.", "ar": "يمكنك التواصل عبر القنوات التالية" },
     "info_location": { "en": "Our Location", "ar": "الموقع" },
     "info_location_val": { "en": "Yemen, Sana'a", "ar": "اليمن، صنعاء" },
+    "info_facebook": { "en": "Facebook", "ar": "فيسبوك" },
+    "info_facebook_val": { "en": "Mutasim Al-Muntasir", "ar": "معتصم المنتصر" },
     "info_phone": { "en": "Phone Number", "ar": "رقم الهاتف" },
     "info_email": { "en": "Email Address", "ar": "البريد الإلكتروني" },
     "form_title": { "en": "Get In Touch", "ar": "أرسل رسالة" },
